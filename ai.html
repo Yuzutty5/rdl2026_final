@@ -2,13 +2,13 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>アイの趣味紹介</title>
-        <meta name="description" content="アイの趣味紹介">
+        <title>アイの趣味紹介 - My Hobby</title>
+        <meta name="description" content="人狼ゲームの世界">
         <meta name="viewport" content="width=device-width">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="js/script.js"></script>
         <link href="css/common.css" rel="stylesheet">
-        <link href="ai.html" rel="stylesheet">
+        <link href="css/ai.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Stick&display=swap" rel="stylesheet">    
@@ -33,7 +33,139 @@
             </div>
         </header>
 
-        
+        <main class="main">
+            <div class="title">
+                <h1>人狼ゲームの世界</h1>
+                <p>アイの趣味紹介</p>
+            </div>
+
+            <!-- 基本ルール -->
+            <div class="feature">
+                <div class="feature-text">
+                    <h2>ようこそ「人狼」の世界へ！</h2>
+                    <p>「人狼（じんろう）ゲーム」は、プレイヤーが「村人陣営」と「人狼陣営」の2つのチームに分かれて争う、究極の会話型心理ゲームです。</p>
+                    <p>平和な村に紛れ込み、夜な夜な村人を襲う恐ろしい「人狼」。村人たちは話し合いを通じて、誰が嘘をついている人狼なのかを推理し、毎日1人ずつ追放していきます。一方、人狼は正体がバレないように村人のフリをして、村をパニックに陥れます。</p>
+                    <ul>
+                        <li><strong>昼のターン：</strong> 全員で議論し、多数決で疑わしい人物を追放します。</li>
+                        <li><strong>夜のターン：</strong> 人狼がこっそり目を覚まし、村人を1人襲撃します。</li>
+                    </ul>
+                    <p>特別な能力を持つ「占い師」や「騎士」などの役職も絡み合い、筋書きのないドラマが生まれます。「相手の嘘を見抜く快感」と「うまく騙し切ったときの達成感」は、一度味わうと病みつきになること間違いなしです！</p>
+                    
+                    <div class="pickup-box">
+                        <h3>💡 さらに奥深い「第三の陣営」も…？</h3>
+                        <p>基本は2つの陣営の戦いですが、ゲームに慣れてくると、村人でも人狼でもない独自の目的を持った<strong>「第三陣営（妖狐や恋人など）」</strong>が紛れ込む特別ルールも！</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 選べる遊び方 -->
+            <div class="feature reverse">
+                <div class="feature-text" style="width: 100%;">
+                    <h2>アプリからカードまで！選べる遊び方</h2>
+                    <p>人狼ゲームの魅力のひとつは、シチュエーションに合わせて様々な遊び方ができること！お好みのスタイルに合わせて、人狼の世界を楽しみましょう。</p>
+
+                    <!-- CSS担当者へ：この箱をmenber.htmlであったように横スクロールにしてくれると嬉しいです あい　-->
+                    <div class="scroll-cards-container">
+                        
+                        <!-- カード1 -->
+                        <div class="play-card">
+                            <img src="images/ai/memo.jpg" alt="カードゲーム">
+                            <h3>🃏 カードゲーム</h3>
+                            <p>緊迫の対面バトル！友人や家族と顔を合わせながら遊ぶ定番スタイルです。</p>
+                        </div>
+
+                        <!-- カード2 -->
+                        <div class="play-card">
+                            <img src="images/ai/memo.jpg" alt="スマホアプリ">
+                            <h3>📱 スマホアプリ</h3>
+                            <p>いつでもどこでも！オンラインで全国のプレイヤーとマッチングでき、白熱の議論が楽しめます。</p>
+                        </div>
+
+                        <!-- カード3 -->
+                        <div class="play-card">
+                            <img src="images/ai/memo.jpg" alt="ワンナイト人狼">
+                            <h3>🐺 ワンナイト人狼</h3>
+                            <p>脱落なしで手軽に！議論はたった1回。10分程度でサクサク遊べるため入門用として大人気です。</p>
+                        </div>
+
+                        <!-- カード4 -->
+                        <div class="play-card">
+                            <img src="images/ai/memo.jpg" alt="ボイスチャット">
+                            <h3>💻 ボイスチャット</h3>
+                            <p>離れた仲間と！Discordなどの通話機能を使って、自宅にいながら友達同士で集まるスタイルです。</p>
+                        </div>
+
+                </div>
+            </div>
+
+            <!-- 観る魅力-->
+            <div class="feature">
+                <div class="feature-text" style="width: 100%;">
+                    <h2>プレイするだけじゃない。「観る」人狼の魅力</h2>
+                    <p>「自分でプレイするのはまだちょっと不安…」という方は、まずは「観る」ことから始めてみませんか？エンターテインメントとしての「観る人狼」もオススメです！</p>
+                    
+                    <div class="watch-container" style="margin-top: 40px;">
+                        
+                        <!-- 1つ目：動画配信-->
+                        <div class="video-box-large" style="margin-bottom: 60px;">
+                            <h3>📺 動画や配信で楽しもう！</h3>
+                            <p>YouTubeなどの動画配信サイトでは、人狼ゲームのプレイ動画も大人気！「誰が嘘をついているか」を一緒に推理したり、視聴者だけの特権として全員の役職を知った上で巧みなトークを観察したりと、遊ぶのとは一味違うワクワクを気軽に味わえます。</p>
+                            
+                            <!-- 動画を表示 -->
+                            <div class="iframe-wrap" style="margin-top: 20px;">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/eSjtXDP43Jk?si=loLkt55Wff0jWe8o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <!-- 2つ目：舞台 -->
+                        <div class="video-box-large">
+                            <h3>🎭 即興演劇に没入しよう！</h3>
+                            <p>完全アドリブで人狼ゲームを繰り広げる舞台公演も人気です！脚本は一切なく、開演直前に決まる配役だけで進む物語は、結末すら誰にもわからない完全即興劇。二度と見られない手に汗握る人間ドラマを、客席で体験してみてはいかかでしょうか？</p>
+                            
+                            <!-- 動画を表示 -->
+                            <div class="iframe-wrap" style="margin-top: 20px;">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/eSjtXDP43Jk?si=loLkt55Wff0jWe8o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- 店舗紹介 -->
+            <div class="feature reverse">
+                <div class="feature-text">
+                    <h2>名古屋で人狼ゲームを遊ぼう！！</h2>
+                    <p>名古屋には、初心者から上級者まで安心して楽しめる人狼スペースが続々と登場しています！<br>
+                    専属のGM（ゲームマスター）が丁寧にルールを説明してゲームを進行してくれるところが多く、初心者が飛び入りしても楽しめます！</p>
+
+                    <!-- 店舗1 -->
+                    <div class="shop-card">
+                        <h3>人狼projectLAB</h3>
+                        <p><strong>住所：</strong>愛知県名古屋市中村区竹橋町5-12 THE WHITE OISE 302</p>
+                        <p><strong>特徴：</strong>「大人が本気で遊べる場所」をコンセプトに、初心者からガチ勢まで安心して没入できる人狼イベントを提供しています。</p>
+                        <!-- Googleマップ -->
+                        <div class="map-wrap">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.554849324496!2d136.87555577551973!3d35.16772105801211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600376e42e9c7a85%3A0xc6de831c7be45f56!2z44CSNDUzLTAwMTYg5oSb55-l55yM5ZCN5Y-k5bGL5biC5Lit5p2R5Yy656u55qmL55S677yV4oiS77yR77ySIOOCpOODiOOCvOODs-ODk-ODqyAzMDI!5e0!3m2!1sja!2sjp!4v1784176451834!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                        <a class="btn" 
+                        ef="https://www.jinrou-pj.com/">店舗の公式サイトへ</a>
+                    </div>
+
+                    <!-- 店舗2 -->
+                    <div class="shop-card">
+                        <h3>人狼ライフ</h3>
+                        <p><strong>住所：</strong>愛知県名古屋市中区錦2-9-6 名和丸の内ビル6F</p>
+                        <p><strong>特徴：</strong>本格的なイベントから気軽なボードゲームまで幅広く楽しめ、前日予約の半額割引や途中参加OKなど気軽に通えるシステムが魅力の人狼ゲーム専門店です。</p>
+                        <!-- Googleマップ -->
+                        <div class="map-wrap">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.4217291881014!2d136.8955898755199!3d35.17103995783197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60037700324c6f07%3A0xd3c63ea239aa3831!2z5Lq654u844Op44Kk44OV!5e0!3m2!1sja!2sjp!4v1784173578250!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                        </div>
+                        <a class="btn" href="https://x.com/jinrolife0206">店舗の公式サイトへ</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
         <footer class="footer">
             <nav class="site-menu">
                 <ul>
