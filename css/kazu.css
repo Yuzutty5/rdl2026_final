@@ -1,9 +1,8 @@
 @charset "utf-8";
 
-/* 【修正】上部エリア：背景画像を「灰色」に変更 */
 .title {
     height: 310px;
-    background-color: #7a7a7a; /* シックな灰色 */
+    background-color: #7a7a7a; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,7 +64,6 @@
     margin-top: 20px;
 }
 
-/* 箇条書きが綺麗に見えるように微調整 */
 .feature-text ol, .feature-text ul {
     padding-left: 20px;
     margin-top: 20px;
