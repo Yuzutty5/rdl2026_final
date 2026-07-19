@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-/* あいさんリクエスト：画面幅いっぱいのバナー ＋ 文字重ね ＋ 画像暗め */
 .main-visual {
     position: relative;
     width: 100%;
@@ -104,7 +103,6 @@
     line-height: 1.6;
 }
 
-/* あいさんリクエスト：members.htmlのような横スクロールカードコンテナ */
 .scroll-cards-container {
     display: flex;
     padding-top: 30px;
@@ -150,7 +148,7 @@
     color: #444;
 }
 
-/* 動画配信エリア設定（元CSSの.movieがベース） */
+/* 動画配信エリア設定 */
 .watch-container {
     margin-top: 30px;
 }
@@ -173,7 +171,7 @@
     margin-top: 25px;
 }
 
-/* 店舗紹介＆Googleマップ（元CSSの.mapがベース） */
+/* 店舗紹介＆Googleマップ */
 .shop-card {
     background-color: #ffffff;
     border: 1px solid #e0e0e0;
