@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-/* リセットCSS & 基本設定 */
 *,
 ::before,
 ::after {
@@ -19,7 +18,7 @@ a {
 }
 
 body {
-    font-family: 'Stick', sans-serif; /* HTMLでの指定に合わせフォントを統一 */
+    font-family: 'Stick', sans-serif; 
     font-size: 16pt;
     color: #000000;
     line-height: 1.5;
@@ -90,7 +89,6 @@ img {
     margin-top: 40px;
 }
 
-/* 共通ボタン（リンク用） */
 .btn {
     display: inline-block;
     padding: 10px 20px;
