@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+/* 【修正】上部エリア：背景画像を「木材の色」に変更 */
+.page-title {
+    height: 310px;
+    background-color: #96724b; /* 温かみのある木材のブラウン */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+.page-title h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32pt;
+    font-weight: bold;
+}
+
+.page-title p {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+/* メインコンテンツ */
+.feature {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 930px;
+    max-width: 90%;
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: flex-start;
+}
+
+.feature-text {
+    max-width: 500px;
+    margin-right: 40px;
+}
+
+.feature-text h2 {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.feature-text h2::after {
+    content: '';
+    display: block;
+    width: 36px;
+    height: 3px;
+    background-color: #000000;
+    margin-top: 20px;
+}
+
+.sub-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.feature-text p {
+    font-size: 15px;
+    line-height: 28px;
+    margin-top: 20px;
+}
+
+.feature-img {
+    max-width: 350px;
+}
+
+/* あいさん作成のピックアップ箱 */
+.pickup-box {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 4px;
+}
+
+@media (max-width: 800px) {
+    .feature {
+        flex-direction: column;
+    }
+    .feature-text {
+        margin-right: 0;
+        max-width: 100%;
+    }
+    .feature-img {
+        margin-top: 30px;
+        max-width: 100%;
+    }
+}

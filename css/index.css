@@ -1,12 +1,18 @@
 @charset "utf-8";
 
+/* PAGE TOP ボタン（jQuery連動用） */
 nav.floating {
     position: absolute;
     top: 100px;
     left: 50px;
     background-color: #d0d0d0;
+    padding: 10px 15px;
+    font-size: 12pt;
+    border-radius: 4px;
+    z-index: 5;
 }
 
+/* ファーストビュー */
 .first-view {
     height: calc(100vh - 110px);
     background-image: url(../images/index/bg_main.png);
@@ -22,7 +28,7 @@ nav.floating {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 40ox;
+    padding-left: 40px;
     padding-bottom: 80px;
     color: #ffffff;
     font-weight: bold;
@@ -43,164 +49,77 @@ nav.floating {
 .lead {
     max-width: 1200px;
     margin: 60px auto;
-}
-
-*,
-::before,
-::after {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-ul, ol {
-    list-style: none;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-body {
-    font-family: sans-serif;
+    padding: 0 40px;
     font-size: 16pt;
-    color: #000000;
-    line-height: 1;
-    background-color: #ffffff;
+    line-height: 1.6;
 }
 
-img {
-    max-width: 100%;
+/* ページ紹介エリア（追加分） */
+.site-intro {
+    width: 930px;
+    max-width: 90%;
+    margin: 80px auto;
+    text-align: center;
 }
 
-.header-inner {
-    max-width: 1200px;
-    height: 110px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 40px;
-    padding-right: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.toggle-menu-button {
-    display: none;
-}
-
-.header-logo {
-    display: block;
-    width: 170px;
-}
-
-.site-menu ul {
-    display: flex;
-}
-
-.site-menu ul li {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.site-menu ul li a {
-    font-family: 'Stick', sans-serif;
-}
-
-.footer {
-    color: #ffffff;
-    background-color: #24211b;
-    padding-top: 30px;
-    padding-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.footer-logo {
-    display: block;
-    width: 235px;
-    margin-top: 90px;
-}
-
-.copyright {
-    font-size: 14pt;
+.section-title {
+    font-size: 22pt;
     font-weight: bold;
-    margin-top: 90px;
+    margin-bottom: 40px;
 }
 
+.card-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    padding: 30px;
+    flex: 1;
+    text-align: left;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    font-size: 16pt;
+}
+
+.card p {
+    margin-bottom: 25px;
+    font-size: 13pt;
+    color: #555;
+    line-height: 1.5;
+}
+
+
+/* 【修正】スマホ表示時の見切れ対策 */
 @media (max-width: 800px) {
-    .site-menu ul {
-        display: block;
-        text-align: center;
+    .first-view {
+        height: auto; /* 高さを画面固定ではなく自動に */
+        padding: 60px 20px; /* 上下に余白を作って潰れないように */
     }
 
-    .site-menu li {
-        margin-top: 20px;
+    .first-view-text {
+        padding-left: 0;
+        padding-bottom: 0;
+        text-align: center; /* スマホでは中央寄せが見やすいです */
     }
 
-    .header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        background-color: #ffffff;
-        height: 50px;
-        z-index: 10;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    .first-view-text h1 {
+        font-size: 32px; /* 文字サイズをスマホ向けに縮小 */
+        line-height: 42px; /* 行間も合わせて調整 */
     }
 
-    .header-inner {
-        padding-left: 20px;
-        padding-right: 20px;
-        height: 100%;
-        position: relative;
+    .first-view-text p {
+        font-size: 16px;
+        margin-top: 15px;
     }
-
-    .header-site-menu {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        color: #ffffff;
-        background-color: #736e62;
-        padding-top: 30px;
-        padding-bottom: 50px;
-        display: none;
-    }
-
-    .header-site-menu.is-show {
-        display: block;
-    }
-
-    .header-logo {
-        width: 100px;
-    }
-
-    .main {
-        padding-top: 50px;;
-    }
-
-    .footer-logo {
-        margin-top: 60px;
-    }
-
-    .copyright {
-        margin-top: 50px;
-    }
-
-    .toggle-menu-button {
-        display: block;
-        width: 44px;
-        height: 34px;
-        background-image: url(../images/common/icon-menu.png);
-        background-size: 50%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-color: transparent;
-        border: none;
-        border-radius: 0;
-        outline: none;
+    
+    .card-container {
+        flex-direction: column; /* カードを縦並びに */
+        gap: 20px;
     }
 }
