@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-/* PAGE TOP ボタン（jQuery連動用） */
 nav.floating {
     position: absolute;
     top: 100px;
@@ -54,7 +53,7 @@ nav.floating {
     line-height: 1.6;
 }
 
-/* ページ紹介エリア（追加分） */
+/* ページ紹介エリア */
 .site-intro {
     width: 930px;
     max-width: 90%;
@@ -95,22 +94,21 @@ nav.floating {
 }
 
 
-/* 【修正】スマホ表示時の見切れ対策 */
 @media (max-width: 800px) {
     .first-view {
         height: auto; /* 高さを画面固定ではなく自動に */
-        padding: 60px 20px; /* 上下に余白を作って潰れないように */
+        padding: 60px 20px; 
     }
 
     .first-view-text {
         padding-left: 0;
         padding-bottom: 0;
-        text-align: center; /* スマホでは中央寄せが見やすいです */
+        text-align: center;
     }
 
     .first-view-text h1 {
         font-size: 32px; /* 文字サイズをスマホ向けに縮小 */
-        line-height: 42px; /* 行間も合わせて調整 */
+        line-height: 42px; 
     }
 
     .first-view-text p {
