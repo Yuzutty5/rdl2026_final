@@ -1,9 +1,8 @@
 @charset "utf-8";
 
-/* 【修正】上部エリア：背景画像を「木材の色」に変更 */
 .page-title {
     height: 310px;
-    background-color: #96724b; /* 温かみのある木材のブラウン */
+    background-color: #96724b; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,7 +71,6 @@
     max-width: 350px;
 }
 
-/* あいさん作成のピックアップ箱 */
 .pickup-box {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
